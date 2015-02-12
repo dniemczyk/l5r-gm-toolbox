@@ -1,0 +1,37 @@
+% Packages and other document configurations
+\documentclass[10pt]{article}
+
+% Using the smaller A6 for character bio and goals
+\usepackage[a6paper, landscape, margin=1cm]{geometry}
+\pagenumbering{gobble}
+
+% Page and font encodings
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Additional packages
+\usepackage{lipsum} % insert dummy lorem ipsum in the document
+
+% Font formating
+\renewcommand*{\familydefault}{\sfdefault}
+
+% Title formating
+\usepackage{titlesec}
+\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
+
+% Paragraph formating
+\setlength{\parindent}{0cm}
+
+% -----------------------------------------------------------------------------
+
+% The basic document
+\begin{document}
+
+% \centering
+
+\section*{Character}
+
+\lipsum[1-4]
+
+\end{document}

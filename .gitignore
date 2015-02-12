@@ -1,0 +1,4 @@
+# Exclude LaTeX output files
+*.pdf
+*.aux
+*.log
