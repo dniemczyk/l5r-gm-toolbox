@@ -1,0 +1,67 @@
+% Packages and other document configurations
+\documentclass[10pt]{article}
+
+% Using the smaller A6 for character bio and goals
+\usepackage[a6paper, margin=1cm]{geometry}
+\pagenumbering{gobble}
+
+% Page and font encodings
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Additional packages
+\usepackage{lipsum} % insert dummy lorem ipsum in the document
+
+% Font formating
+\renewcommand*{\familydefault}{\sfdefault}
+
+% Title formating
+\usepackage{titlesec}
+\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
+
+% Paragraph formating
+\setlength{\parindent}{0cm}
+
+% -----------------------------------------------------------------------------
+
+% The basic document
+\begin{document}
+
+% \centering
+
+\section*{Character Name (Gender)}
+
+\begin{itemize}
+  \item[Role:] What schools did the character attend
+  \item[Visual:] How the character looks
+  \item[Manner:] Typical behaviour
+  \item[Goals:]  What the char wishes to achieve
+  \item[Secret:] Noone can know this
+  \item[Allies:] One is lucky if one has some
+  \item[Foes:]   Everyone needs one
+  \item[Woes:]   What is a problem for the char
+\end{itemize}
+
+\section*{Bio}
+
+\lipsum[1]
+
+\section*{Rings and Stats}
+\begin{center}
+  \begin{tabular}{ c c c c c }
+    Fire & Water & Wind & Earth & Void \\
+    2 & 2 & 2 & 2 & 2 \\
+    Int: 3 & & & & \\
+  \end{tabular}
+\end{center}
+
+\begin{itemize}
+  \item[School:] All the schools the char visited
+  \item[Adv.:]
+  \item[Disadv.:]
+  \item[Skills:] List of char skills
+  \item[Spells:]
+\end{itemize}
+
+\end{document}
