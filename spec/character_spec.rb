@@ -3,9 +3,16 @@ require './lib/character'
 
 RSpec.describe Character do
   describe "with name and age" do
+    before do
+      @character = Character.new("Taito", "Shiba", 22)
+    end
+
     it "should be created" do
-      character = Character.new("Taito", "Shiba", 22)
-      expect(character).not_to be_nil
+      expect(@character).not_to be_nil
+    end
+
+    it "should have a clan name" do
+      expect(@character.clan_name).to eq("Phoenix")
     end
   end
 
@@ -22,8 +29,8 @@ RSpec.describe Character do
       expect(@character.age).to eq(18)
     end
 
-    it "should be ronin (clan)" do
-      expect(@character.clan).to eq("ronin")
+    it "should be ronin (clan name)" do
+      expect(@character.clan_name).to eq("ronin")
     end
   end
 
