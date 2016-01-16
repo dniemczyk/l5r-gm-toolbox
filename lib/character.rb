@@ -11,4 +11,8 @@ class Character
   def full_name
     "#{@first_name} #{@family_name}"
   end
+
+  def clan
+    "ronin"
+  end
 end

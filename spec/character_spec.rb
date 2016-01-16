@@ -10,14 +10,20 @@ RSpec.describe Character do
   end
 
   describe "with only first name" do
+    before do
+      @character = Character.new("Ryu")
+    end
+
     it "should be created with default family name and age" do
-      character = Character.new("Ryu")
-      expect(character).not_to be_nil
+      expect(@character).not_to be_nil
     end
 
     it "should have a default age of 18" do
-      character = Character.new("Ken")
-      expect(character.age).to eq(18)
+      expect(@character.age).to eq(18)
+    end
+
+    it "should be ronin (clan)" do
+      expect(@character.clan).to eq("ronin")
     end
   end
 
