@@ -1,4 +1,6 @@
-# L5R Character
+#
+# Legend of the Five Rings Character
+#
 class Character
   attr_reader :family_name, :first_name, :age
 
